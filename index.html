@@ -28,13 +28,27 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>title</title>
   </head>
   <body>
     <div id="app">
-      <div class="container">{{ title }}</div>
+      <div class="container d-flex flex-wrap">
+        <div
+          v-for="(item, index) in discList"
+          :key="index"
+          class="card"
+          style="width: 18rem"
+        >
+          <img :src="item.poster" class="card-img-top" :alt="item.author" />
+          <div class="card-body">
+            <h3 class="card-title">{{ item.author}}</h3>
+            <h5 class="card-text">{{ item.title }}</h5>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="main.js"></script>
