@@ -90,17 +90,18 @@
             <h3 class="card-title">{{ item.author}}</h3>
             <h5 class="card-text">{{ item.title }}</h5>
           </div>
-
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            :data-bs-target="'#exampleModal' + index"
-          >
-            <!-- ho modificato il adta-target in modo che mi aprisse la modal dell' item e non sempre la prima -->
-            more info
-          </button>
-
+          <div class="d-flex">
+            <button
+              type="button"
+              class="btn btn-secondary w-75"
+              data-bs-toggle="modal"
+              :data-bs-target="'#exampleModal' + index"
+            >
+              <!-- ho modificato il adta-target in modo che mi aprisse la modal dell' item e non sempre la prima -->
+              more info
+            </button>
+            <button class="btn btn-danger w-25 text-nowrap">delete</button>
+          </div>
           <!-- Modal -->
           <!-- modifico l' id per generare id sempre diversi  -->
           <div
