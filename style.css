@@ -1,3 +1,105 @@
+#app {
+  background-color: #fff;
+}
+
 .my-img {
-  height: 300px;
+  height: 100%;
+  border-radius: 10%;
+}
+
+.my-card {
+  font-size: 3rem;
+  width: 40%;
+  background-color: transparent;
+  color: #000000;
+  border: transparent;
+}
+
+.heart {
+  font-size: 3rem;
+  position: absolute;
+  border: transparent;
+}
+
+/* Stilizzazione generale */
+
+.container.header {
+  max-width: 1200px; /* Larghezza massima del contenitore */
+  margin: 50px auto 100px; /* Centra il contenitore */
+  justify-content: space-between; /* Spazio tra gli elementi all'interno */
+}
+
+/* Stilizzazione degli input */
+input.my-input {
+  border: none; /* Rimuove il bordo */
+  border-radius: 4px; /* Angoli arrotondati */
+  padding: 10px 15px; /* Padding interno */
+  margin-right: 10px; /* Margine destro */
+  background-color: #fff; /* Colore di sfondo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra */
+  transition: box-shadow 0.3s ease; /* Transizione dell'ombra */
+}
+
+input.my-input:focus {
+  outline: none; /* Rimuove l'outline al focus */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra più evidente al focus */
+}
+
+/* Stilizzazione del pulsante */
+button {
+  border: none; /* Rimuove il bordo */
+  border-radius: 4px; /* Angoli arrotondati */
+  padding: 10px 20px; /* Padding interno */
+  background-color: #fff; /* Colore di sfondo */
+  color: #1db954; /* Colore del testo */
+  font-weight: bold; /* Testo in grassetto */
+  cursor: pointer; /* Cambia il cursore al passaggio */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transizioni */
+}
+
+button:hover {
+  background-color: #e5e5e5; /* Cambia colore al passaggio */
+  color: #333; /* Cambia colore del testo al passaggio */
+}
+
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #588157 50%, #a3b18a);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: #588157;
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
 }
