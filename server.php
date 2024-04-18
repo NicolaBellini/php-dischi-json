@@ -32,6 +32,13 @@ if(isset($_POST['indexToLike'])){
   file_put_contents('disc-list.json', json_encode($discsList));
 }
 
+ // do alla classe liked il valore false
+ if(isset($_POST['toggleIndex'])){
+   $index = $_POST['toggleIndex'];
+   $discsList[$index]['liked']=!$discsList[$index]['liked'];
+   file_put_contents('disc-list.json', json_encode($discsList));
+ }
+
 
 
 header('Content-Type: application/json');
