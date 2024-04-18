@@ -111,7 +111,7 @@
             <input
               type="text"
               v-model="newDisc.poster"
-              class="form-control my-input"
+              class="form-control my-input w-25"
               placeholder="url immagine"
             />
           </div>
@@ -124,7 +124,7 @@
         <div
           v-for="(item, index) in discList"
           :key="index"
-          class="card m-3 my-card"
+          class="card my-card"
         >
           <img
             :src="item.poster"

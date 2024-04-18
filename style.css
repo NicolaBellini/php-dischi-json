@@ -5,9 +5,12 @@
 .my-img {
   height: 100%;
   border-radius: 10%;
+  aspect-ratio: 1/1;
 }
 
 .my-card {
+  margin: 50px 30px;
+  height: 680px;
   font-size: 3rem;
   width: 40%;
   background-color: transparent;
