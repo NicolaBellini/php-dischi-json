@@ -34,7 +34,7 @@
   </head>
 
   <body>
-    <div id="app" class="position-relative">
+    <div id="app" class="position-relative d-flex">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 1000"
@@ -76,11 +76,11 @@
           d="M0,160L26.7,181.3C53.3,203,107,245,160,229.3C213.3,213,267,139,320,128C373.3,117,427,171,480,197.3C533.3,224,587,224,640,234.7C693.3,245,747,267,800,240C853.3,213,907,139,960,128C1013.3,117,1067,171,1120,213.3C1173.3,256,1227,288,1280,272C1333.3,256,1387,192,1413,160L1440,128L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
         ></path>
       </svg>
-      <div class="container-fluid position-relative z-2 pt-5">
-        <div class="container header d-flex">
-          <div class="d-flex">
-            <div class="d-flex">
-              <h1 class="me-3">BOOLIFY</h1>
+      <div class="position-relative z-2 pt-5 w-25">
+        <div class="container header d-flex flex-column position-fixed w-25">
+          <div class="d-flex flex-column">
+            <div class="d-flex flex-column">
+              <h1 class="me-3 text-white">BOOLIFY</h1>
               <input
                 type="text"
                 v-model="newDisc.title"
@@ -94,7 +94,7 @@
                 placeholder="autore"
               />
             </div>
-            <div class="d-flex">
+            <div class="d-flex flex-column">
               <input
                 type="text"
                 v-model="newDisc.year"
@@ -111,11 +111,11 @@
             <input
               type="text"
               v-model="newDisc.poster"
-              class="form-control my-input w-25"
+              class="form-control my-input"
               placeholder="url immagine"
             />
           </div>
-          <div class="d-flex align-items-end ms-5">
+          <div class="d-flex align-items-end">
             <button @click.stop="sendData()">invia</button>
           </div>
         </div>
@@ -144,7 +144,7 @@
             &hearts;
           </span>
           <span
-            class="btn text-danger heart"
+            class="btn text-light heart"
             v-show="item.liked"
             @click="toggleLike(index)"
           >
@@ -158,7 +158,7 @@
             &hearts;
           </span>
 
-          <div class="d-flex">
+          <div class="d-flex justify-content-end">
             <button
               class="button-64 me-3"
               role="button"

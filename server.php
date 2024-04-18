@@ -7,7 +7,7 @@ $discsList = json_decode($json_String, true);
 // Qui ci va la logica 
   
 // Aggiungere un nuovo disco
-if (isset($_POST["newTitle"])) {
+if (!empty($_POST["newTitle"])) {
   $newDisc = [
     'title' => $_POST['newTitle'],
     'author' => $_POST['newAuthor'],

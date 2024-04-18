@@ -24,45 +24,43 @@
   border: transparent;
 }
 
-/* Stilizzazione generale */
-
 .container.header {
-  max-width: 1200px; /* Larghezza massima del contenitore */
-  margin: 50px auto 100px; /* Centra il contenitore */
-  justify-content: space-between; /* Spazio tra gli elementi all'interno */
+  max-width: 1200px;
+  margin: 50px auto 100px;
+  justify-content: space-between;
 }
 
-/* Stilizzazione degli input */
 input.my-input {
-  border: none; /* Rimuove il bordo */
-  border-radius: 4px; /* Angoli arrotondati */
-  padding: 10px 15px; /* Padding interno */
-  margin-right: 10px; /* Margine destro */
-  background-color: #fff; /* Colore di sfondo */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra */
-  transition: box-shadow 0.3s ease; /* Transizione dell'ombra */
+  margin: 15px auto;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  background-color: #a3b18a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
 input.my-input:focus {
-  outline: none; /* Rimuove l'outline al focus */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra più evidente al focus */
+  background-color: #a3b18a;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Stilizzazione del pulsante */
 button {
-  border: none; /* Rimuove il bordo */
-  border-radius: 4px; /* Angoli arrotondati */
-  padding: 10px 20px; /* Padding interno */
-  background-color: #fff; /* Colore di sfondo */
-  color: #1db954; /* Colore del testo */
-  font-weight: bold; /* Testo in grassetto */
-  cursor: pointer; /* Cambia il cursore al passaggio */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transizioni */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  background-color: #bebebe;
+  color: #1db954;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button:hover {
-  background-color: #e5e5e5; /* Cambia colore al passaggio */
-  color: #333; /* Cambia colore del testo al passaggio */
+  background-color: #e5e5e5;
+  color: #333;
 }
 
 .button-64 {
