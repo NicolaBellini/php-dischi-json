@@ -12,7 +12,7 @@ if (isset($_POST["newTitle"])) {
     'title' => $_POST['newTitle'],
     'author' => $_POST['newAuthor'],
     'year' => $_POST['newYear'],
-    'poster' => $_POST['newPoster'],
+    'poster' =>!empty($_POST['newPoster'])?$_POST['newPoster']: 'https://images.unsplash.com/photo-1526327760257-75f515c74478?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG11c2ljJTIwZGlzY3xlbnwwfHwwfHx8MA%3D%3D',
     'genre' => $_POST['newGenre'],    
   ];
   $discsList[] = $newDisc;
