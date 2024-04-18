@@ -1,11 +1,15 @@
 const { createApp } = Vue;
 
-const app = createApp({
+createApp({
   data() {
     return {
       title: "loco",
       discList: [],
       apiUrl: "server.php",
+      newDisc: {
+        text: "",
+        year: "",
+      },
     };
   },
   methods: {

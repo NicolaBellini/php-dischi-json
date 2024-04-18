@@ -7,6 +7,9 @@ $discsList = json_decode($json_String);
 // Qui ci va la logica 
 
 
+
+
+
 header('Content-Type: application/json');
 
 // stampo il json in pagina
