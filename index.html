@@ -94,6 +94,15 @@
             <h3 class="card-title">{{ item.author}}</h3>
             <h5 class="card-text">{{ item.title }}</h5>
           </div>
+          <button
+            class="btn text-danger"
+            v-if="item.liked"
+            @click="addLike(index)"
+          >
+            &hearts;
+          </button>
+          <button class="btn" v-else @click="addLike(index)">&hearts;</button>
+
           <div class="d-flex">
             <button
               type="button"

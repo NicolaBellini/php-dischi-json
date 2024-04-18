@@ -56,6 +56,18 @@ createApp({
         console.log(res.data);
       });
     },
+
+    addLike(index) {
+      // passo l' indice dell' elemento da eliminare ottenuto con il ciclo v-for
+      const data = new FormData();
+      data.append("indexToLike", index);
+
+      // invio i dati al server e riscrivo la lista con i dati aggiornati
+      axios.post(this.apiUrl, data).then((res) => {
+        this.discList = res.data;
+        console.log(res.data);
+      });
+    },
   },
   mounted() {
     this.getApi(this.apiUrl);

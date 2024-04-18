@@ -25,6 +25,13 @@ if (isset($_POST['indexToDelete'])) {
   file_put_contents('disc-list.json', json_encode($discsList));
 }
 
+// aggiungo la chiave valore liked=true 
+if(isset($_POST['indexToLike'])){
+  $index = $_POST['indexToLike'];
+  $discsList[$index]['liked'] = 'true';
+  file_put_contents('disc-list.json', json_encode($discsList));
+}
+
 
 
 header('Content-Type: application/json');
